@@ -1,5 +1,11 @@
 package aye2.practica6;
 
+/**
+ * 
+ * @author AluDoc
+ * @version 1.0
+ */
+
 public class Hora {
 	
 	private int horas;

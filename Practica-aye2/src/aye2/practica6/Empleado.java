@@ -22,6 +22,6 @@ public class Empleado {
 	}
 	
 	public void verDatos() {
-		System.out.println("Empleado nro " + );
+		System.out.println("Empleado nro " + numero);
 	}
 }
