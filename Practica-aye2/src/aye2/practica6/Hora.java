@@ -76,7 +76,7 @@ public class Hora {
 		corregirHora();
 	}
 	
-	public void Hora sumar(Hora h1, Hora h2) {
+	public static Hora sumar(Hora h1, Hora h2) {
 		Hora h3 = new Hora();
 		h3.clone(h1);
 		h3.sumar(h2);
