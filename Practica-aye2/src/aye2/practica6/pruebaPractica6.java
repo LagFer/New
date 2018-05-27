@@ -1,3 +1,10 @@
+/**
+ * @author LagFer
+ * @version 1.0
+ * 
+ * Practica 6 de AyEII
+ */
+
 package aye2.practica6;
 
 public class pruebaPractica6 {
