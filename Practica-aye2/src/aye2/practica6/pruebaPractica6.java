@@ -17,6 +17,10 @@ public class pruebaPractica6 {
 		
 		Punto p1 = new Punto(0,0);
 		
+		Fecha f = new Fecha(10,11,1994);
+		
+		System.out.println(f.toString());
+		
 		if (p.igualdad(p1)) {
 			System.out.println("Son iguales");}
 			else {System.out.println("No son iguales");
