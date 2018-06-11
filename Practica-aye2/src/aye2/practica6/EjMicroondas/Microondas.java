@@ -14,6 +14,18 @@ public class Microondas implements iMicroondas{
 		puerta = new Puerta();
 	}
 	
+	public void encender() {
+		estado = estadoMicroondas.ENCENDIDO;
+	}
+	
+	public void apagar(){
+		estado = estadoMicroondas.APAGADO;
+	}
+	
+	public void mostrarEstado() {
+		
+	}
+	
 	public void setPuerta(estadoPuerta puerta) {
 		this.puerta = puerta;
 	}
