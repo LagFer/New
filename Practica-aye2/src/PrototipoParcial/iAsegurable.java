@@ -2,7 +2,7 @@ package PrototipoParcial;
 
 public interface iAsegurable {
 
-	void setPrima(float prima);
+	public void setPrima(float prima) throws primaInvalidaException;
 	
 	float getPrima();
 }

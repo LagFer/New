@@ -36,6 +36,10 @@ public abstract class Bien{
 		return valorMercado;
 	}
 	
+	public float getValorFiscal() {
+		return valorFiscal;
+	}
+	
 	public int getCodigo() {
 		return codigo;
 	}

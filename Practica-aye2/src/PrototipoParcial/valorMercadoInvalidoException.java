@@ -1,5 +1,5 @@
 package PrototipoParcial;
 
-public class valorMercadoInvalidoException {
+public class valorMercadoInvalidoException extends sistemaEmpresaException{
 
 }

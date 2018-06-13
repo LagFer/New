@@ -1,5 +1,5 @@
 package PrototipoParcial;
 
-public class invalidEmailException {
+public class invalidEmailException extends sistemaEmpresaException{
 
 }

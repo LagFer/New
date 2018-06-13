@@ -5,8 +5,7 @@ public class automotor extends Bien implements iAsegurable, iTransferible, iGrav
 	private float prima;
 	private float alicuota;
 
-	public void setAlicuota(float alicuota) throws alicuotaInvalidaException{
-		
+	public void setAlicuota(float alicuota) throws alicuotaInvalidaException{	
 		if (alicuota <= 0) {
 			throw new alicuotaInvalidaException();
 		}
@@ -14,12 +13,10 @@ public class automotor extends Bien implements iAsegurable, iTransferible, iGrav
 	}
 
 	public float getAlicuota() {
-		
 		return alicuota;
 	}
 
 	public float calcularImpuesto() {
-		
 		return alicuota * valorFiscal;
 	}
 
@@ -29,7 +26,6 @@ public class automotor extends Bien implements iAsegurable, iTransferible, iGrav
 		}
 		try {
 			empresa.notificarTransferencia(titular, codigo);
-
 		}catch(emailNotSentException e) {
 			System.out.println("Email no enviado");
 		}
@@ -44,8 +40,7 @@ public class automotor extends Bien implements iAsegurable, iTransferible, iGrav
 	}
 
 	public float getPrima() {
-		
-		return 0;
+		return prima;
 	}
 
 	
