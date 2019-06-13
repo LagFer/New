@@ -21,7 +21,7 @@ public class MatriculaAuto {
 	private char letra;
 	private int numero;
 
-	public static void main(char letra, String digitos) throws MatriculaAutoException {
+	public MatriculaAuto(char letra, String digitos) throws MatriculaAutoException {
 		if (letra != 'A' && letra != 'B') {
 			throw new LetraInvalidaException("La letra (" + letra + ") es invalida");
 			
@@ -31,19 +31,20 @@ public class MatriculaAuto {
 			
 			numero = Integer.parseInt(digitos);
 			
-			this.letra = letra;
+			letra = letra;
 		}
-		
-		public String toString() {
-			return "Matricula Auto: " + letra + "-" + numero;
-		}
+	}
+	
+	public String toString() {
+		return "Matricula Auto: " + letra + "-" + numero;
+	}
 	
 	public static void main(String[] args) {
 		
 		MatriculaAuto mat;
 		
 		try {
-			mat = new MatriculaAuto("A", "12345678");
+			mat = new MatriculaAuto('A', "12345678");
 			System.out.println(mat);
 		}catch(MatriculaAutoException e) {
 			System.out.println("Error de instanciacion: " + e);
@@ -58,12 +59,12 @@ public class MatriculaAuto {
 		
 	}
 	
-	public setLetra(char letra) {
+	public void setLetra(char letra) {
 		try{
 			if (letra != 'A' && letra != 'B') {
 				throw new LetraInvalidaException("La letra (" + letra + ") es invalida");
 			}
 		}
 	}
-}
+
 }
